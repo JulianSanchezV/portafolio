@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.avatar-julian {
+  width: 190px;
+  height: 190px;
+}
+
+.text {
+  font-family: 'Inter', sans-serif;
+  font-size: 90px;
+  background: linear-gradient(to bottom, #ffcc00, #ff3300);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+  text-align: center;
+}
+
+.hello {
+  width: 80px;
+  height: 80px;
+}
