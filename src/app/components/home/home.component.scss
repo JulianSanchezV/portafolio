@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100%;
   height: 100vh;
 }
 
@@ -14,8 +15,9 @@
 }
 
 .text {
+  position: relative;
   font-family: 'Inter', sans-serif;
-  font-size: 80px;
+  font-size: 6em;
   font-weight: bold;
   background: linear-gradient(to bottom, #00a7d9, #e3ff2b);
   -webkit-background-clip: text;
@@ -24,15 +26,29 @@
   display: inline-block;
   text-align: center;
   letter-spacing: -0.02em;
+  line-height: 1.1;
 }
 
 .hello {
   width: 70px;
   height: 70px;
+  animation: wave 0.2s 4;
 }
 
 .text2 {
   font-family: 'Inter', sans-serif;
   color: #cecece;
   font-size: 25px;
+}
+
+@keyframes wave {
+  0%, 100% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(-10deg);
+  }
 }
