@@ -2,6 +2,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
+  text-align: center;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   width: 100%;
   height: 100vh;
@@ -17,7 +25,7 @@
 .text {
   position: relative;
   font-family: 'Inter', sans-serif;
-  font-size: 6em;
+  font-size: 5em;
   font-weight: bold;
   background: linear-gradient(to bottom, #00a7d9, #e3ff2b);
   -webkit-background-clip: text;
@@ -41,14 +49,35 @@
   font-size: 25px;
 }
 
+.finger {
+  height: 37px;
+  animation: bounce 1.3s infinite;
+}
+
+.bounce-finger {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 @keyframes wave {
   0%, 100% {
     transform: rotate(0);
   }
-  50% {
+  25% {
     transform: rotate(10deg);
   }
-  100% {
+  75% {
     transform: rotate(-10deg);
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
   }
 }
