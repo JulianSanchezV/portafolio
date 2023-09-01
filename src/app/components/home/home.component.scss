@@ -44,7 +44,6 @@
   position: relative;
   width: 150px;
   height: 150px;
-
 }
 
 .content2 {
@@ -53,11 +52,6 @@
   z-index: -10;
   gap: 0.75rem;
   max-width: 750px;
-
-  @media (max-width: 700px) {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-  }
 }
 
 .text {
@@ -67,11 +61,15 @@
   letter-spacing: -0.05em;
   color: transparent;
   font-size: 6rem;
-  min-width: 450px;
-  max-width: 800px;
   background-image: linear-gradient(to bottom, #ffd24e, #b96205);
   background-clip: text;
   line-height: 1.2;
+
+  @media (max-width: 700px) {
+    font-size: 4.5rem;
+    line-height: 1.2;
+}
+
 }
 
 .hello {
@@ -94,9 +92,9 @@
 
 .text2 {
   color: #cecece;
-  letter-spacing: 0.03rem;
+  letter-spacing: -0.025rem;
   font-weight: 600;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
 }
 
 .bounce-finger {
